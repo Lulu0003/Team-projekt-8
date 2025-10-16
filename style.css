@@ -3,9 +3,99 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #e6f6ff;
 }
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+/***************header*********** */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #e6f6ff;
+}
+
+header .logo {
+  height: 80px;
+  width: auto;
+  padding-left: 40px;
+}
+
+header img {
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+  padding-right: 30px;
+  color: #222;
+}
+
+nav a,
+nav span {
+  color: #0042b0;
+  font-weight: 500;
+  font-family: "Inter";
+  text-decoration: none;
+}
+
+/*****************userliste*************/
+main {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.filters select {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.donor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.donor-card {
+  background-color: #e6f6ff;
+  padding: 25px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.donor-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.donor-card h3 {
+  margin: 10px 0 5px;
+}
+
+.donor-card p {
+  font-size: 0.9rem;
+  color: #333;
 }
