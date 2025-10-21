@@ -28,29 +28,27 @@
         <main>
             <h2>DONERE</h2>
             <section class="filters">
-                <select>
-                    <option selected disabled>Hårfarve</option>
-                    <option>Blond</option>
-                    <option>Brun</option>
-                    <option>Sort</option>
-                    <option>Rød</option>
+                <select class="eyeFilter">
+                    <option value="alle">Alle øjenfarver</option>
+                    <option value="Blue">Blå</option>
+                    <option value="Green">Grøn</option>
+                    <option value="Brown">Brun</option>
+                </select>
+                <select class="hairFilter">
+                    <option value="alle">Alle hårfarver</option>
+                    <option value="Black">Sort</option>
+                    <option value="Brown">Brun</option>
+                    <option value="Blond">Blond</option>
+                    <option value="Red">Rød</option>
+                </select>
+                <select class="heightFilter">
+                    <option value="alle">Alle højder</option>
+                    <option value="lav">160–180 cm</option>
+                    <option value="mellem">170–180 cm</option>
+                    <option value="hoej">Over 180 cm</option>
                 </select>
 
-                <select>
-                    <option selected disabled>Øjenfarve</option>
-                    <option>Blå</option>
-                    <option>Grøn</option>
-                    <option>Brun</option>
-                </select>
-
-                <select>
-                    <option selected disabled>Højde</option>
-                    <option>160–170 cm</option>
-                    <option>170–180 cm</option>
-                    <option>180-190 cm</option>
-                    <option>190-200 cm</option>
-                    <option>+200 cm</option>
-                </select>
+                <button class="nustil_filters">Nulstil filtre</button>
             </section>
             <section class="donor-grid">
                 <!-- <article class="donor-card">
