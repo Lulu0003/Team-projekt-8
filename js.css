@@ -1,1 +1,89 @@
 /*************** donorrofil/single view **************/
+body {
+  background-color: #e6f6ff;
+  text-align: center;
+}
+
+main {
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.donor_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(252, 252, 255);
+  width: 60%;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 50px;
+  align-items: center;
+}
+.fuldenavn {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+.donor_info {
+  text-align: left;
+  padding: 0 30px;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin: 10px 0;
+}
+.knap_række {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.book_knap {
+  background-color: #9db6ff;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+  transition: 0.3s;
+}
+.book_knap:hover {
+  background-color: #7d9ef5;
+}
+
+.like_knap {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.like_knap.active {
+  color: red;
+  transform: scale(1.2);
+}
+
+.label {
+  font-weight: 500;
+}
+
+.value {
+  font-weight: 400;
+}
+
+.obs {
+  font-size: 0.9rem;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.4;
+  color: #333;
+}
