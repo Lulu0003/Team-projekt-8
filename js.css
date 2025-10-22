@@ -11,6 +11,7 @@ main {
 h1 {
   font-size: 2rem;
   margin-bottom: 30px;
+  color: #0042b0;
 }
 
 .donor_card {
@@ -67,7 +68,7 @@ p {
   transition: color 0.3s, transform 0.3s;
 }
 
-.like_knap.active {
+.like_knap.hover {
   color: red;
   transform: scale(1.2);
 }
