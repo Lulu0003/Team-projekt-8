@@ -48,6 +48,10 @@ main {
   background-color: #e6f6ff;
 }
 
+p {
+  font-family: "Instrument Serif", serif;
+}
+
 /*****************footer*************/
 
 footer {
@@ -89,6 +93,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 60px;
   margin-top: 30px;
+  font-family: "Instrument Serif", serif;
 }
 
 .filters {
