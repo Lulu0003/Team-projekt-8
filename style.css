@@ -1,11 +1,85 @@
-/*************** Reset ****************/
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-img {
+
+/* font */
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #000; /* fallback */
+}
+
+/* Hero med baggrund og perspektiv */
+.hero {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100vh;
+  background-image: url("img/baggrundsbillede.webp");
+  background-size: cover;
+  background-position: center;
+  transition: background-position 0.2s ease-out;
+  perspective: 800px;
+}
+
+/* Logo i midten med 3D-effekt */
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  transition: transform 120ms ease-out;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/*Tekst styling*/
+/* Tekstplacering */
+.hero-text {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+}
+
+/* Logo + tekst afstand */
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20rem;
+  font-weight: 400;
+}
+
+.hero-text .bold {
+  font-weight: 700;
+}
+
+/* Link styling */
+.hero-text a.link {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none; /* fjerner understregning */
+}
+
+.hero-text em {
+  font-style: italic;
+  font-weight: 600;
 }
