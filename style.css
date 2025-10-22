@@ -77,6 +77,7 @@ footer {
 .kontakt_footer h2 {
   font-size: 25px;
   margin: 1rem;
+  color: #0042b0;
 }
 
 /*****************userliste*************/
@@ -89,6 +90,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 60px;
   margin-top: 30px;
+  color: #0042b0;
 }
 
 .filters {
