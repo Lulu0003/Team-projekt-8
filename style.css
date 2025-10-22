@@ -10,6 +10,10 @@ img {
   height: auto;
   display: block;
 }
+body {
+  margin: 0;
+  background-color: #e6f6ff;
+}
 /***************header*********** */
 header {
   display: flex;
@@ -87,8 +91,9 @@ main {
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .filters {
@@ -98,11 +103,20 @@ h2 {
   margin-bottom: 40px;
 }
 
-.filters select {
-  padding: 10px 20px;
-  border: 2px solid #000;
-  border-radius: 5px;
+.filters select,
+.nustil_filters {
+  padding: 10px 18px;
+  border: 1.5px solid #000;
+  border-radius: 6px;
   font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filters select:hover,
+.nustil_filters:hover {
+  background-color: #adcbfc;
 }
 .donor-grid {
   display: grid;
@@ -113,11 +127,11 @@ h2 {
 }
 
 .donor-card {
-  background-color: #e6f6ff;
+  background-color: #f6fcff;
   padding: 25px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  text-align: center;
+  border: 1px solid #adcbfc;
+  border-radius: 12px;
+  text-align: left;
   width: 200px;
 }
 
@@ -125,12 +139,24 @@ h2 {
   width: 100%;
   border-radius: 5px;
 }
-
-.donor-card h3 {
-  margin: 10px 0 5px;
+.donor-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-
+.donor-card h3 {
+  margin: 5px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #003366;
+  text-decoration: none;
+}
+.donor-card a {
+  text-decoration: none;
+  color: #003366;
+}
 .donor-card p {
-  font-size: 0.9rem;
-  color: #333;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
 }
